@@ -1,0 +1,13 @@
+Ollama
+
+ollama list
+ollama ps
+ollama serve
+ollama run llama3.2
+
+curl http://localhost:11434
+
+curl -sX GET "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2020-01-01&endtime=2020-01-02" | ollama run llama3.2 "Fais moi un tableau avec les différents tremblements de terre"
+
+
+>>> /set system "Je suis Ilan, DESCRIPTION_etc"    
