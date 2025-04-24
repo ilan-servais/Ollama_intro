@@ -56,6 +56,22 @@ Remplacez `llama3.2:latest` par un autre modèle disponible sur Ollama.
 - Supprimer un modèle: `ollama rm [nom-du-modèle]`
 - Exécuter un modèle directement dans le terminal: `ollama run [nom-du-modèle]`
 
+## Bien fermer Ollama correctement
+
+Sur Windows, Ollama peut se lancer automatiquement en tâche de fond. Voici comment le fermer complètement :
+
+1. Cliquez sur la flèche ^ dans la barre des tâches (en bas à droite de l’écran)
+2. Faites un clic droit sur l'icône Ollama
+3. Cliquez sur **Quitter**
+4. Vérifiez que le serveur est bien arrêté en allant sur `http://localhost:11434` — s’il ne répond plus, Ollama est bien fermé
+5. Optionnel : lancez la commande suivante pour vérifier que plus aucun modèle ne tourne :
+   ```bash
+   ollama ps
+   ```
+   Si rien n’est affiché, tout est stoppé.
+
+💡 Note : Le simple fait d’exécuter une commande `ollama` dans le terminal peut redémarrer automatiquement le service. Pensez à bien le quitter si vous ne voulez pas qu’il tourne.
+
 ## Dépannage
 
 - Si vous rencontrez l'erreur "Connection refused", vérifiez qu'Ollama est bien démarré
@@ -67,4 +83,4 @@ Remplacez `llama3.2:latest` par un autre modèle disponible sur Ollama.
 - [Documentation Ollama](https://github.com/ollama/ollama/blob/main/README.md)
 - [Documentation Llama 3](https://ai.meta.com/llama/)
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
-# Ollama_intro
+
