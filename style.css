@@ -1,0 +1,17 @@
+/* Ajout de styles pour les messages */
+.message {
+  max-width: 75%;
+  padding: 10px;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.message.user {
+  background-color: #bfdbfe; /* Bleu clair */
+  align-self: flex-start;
+}
+
+.message.ai {
+  background-color: #e5e7eb; /* Gris */
+  align-self: flex-end;
+}
